@@ -8,7 +8,7 @@ public class activity {
         ChromeDriver chromeDriver = new ChromeDriver();
         // naviate to FB
         chromeDriver.get("https://facebook.com");
-
+//
 
 
 
