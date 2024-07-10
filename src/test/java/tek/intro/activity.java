@@ -5,10 +5,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class activity {
     public static void main(String[] args) {
         // open browser
-        ChromeDriver chromeDriver = new ChromeDriver();
+        ChromeDriver browesing = new ChromeDriver();
+        // maximise window
+        browesing.manage().window().maximize();
         // naviate to FB
-        chromeDriver.get("https://facebook.com");
-//
+        browesing.get("https://facebook.com");
+        // cach title
+        String itle = browesing.getTitle();
+        System.out.println(itle);
+
+        // chrom.quit
+        browesing.quit();
+
 
 
 
